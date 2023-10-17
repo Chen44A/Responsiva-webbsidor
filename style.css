@@ -1,1 +1,17 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: auto;
+  width: 1080px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
