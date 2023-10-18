@@ -45,6 +45,7 @@ footer .copyright-footer p {
 }
 footer .copyright-footer p p span {
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 footer .copyright-footer .poweredby-footer {
   margin-bottom: 50px;
