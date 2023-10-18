@@ -1,4 +1,74 @@
 //Small mobile footer
+footer {
+  .logo_footer {
+    display: flex;
+    justify-content: center;
+    // max-width: auto;
+    // max-height: 600px;
+  }
+
+  background-color: rgb(140, 140, 140);
+
+  .footer_list {
+    list-style-type: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  li {
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  .social-media-footer {
+
+    @include social-media-footer-mixin;
+
+    p {
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-inline-end: 2rem;
+      color: black;
+    }
+  }
+
+  a {
+    padding: 1.5%;
+  }
+
+  .copyright-footer {
+    display: flex;
+    justify-content: center;
+
+    p {
+      font-size: 0.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(184, 184, 184);
+
+    }
+  }
+
+  .poweredby-footer {
+    display: flex;
+    justify-content: center;
+
+    p {
+      font-size: 0.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(184, 184, 184);
+      margin-bottom: 40px;
+    }
+
+    p:nth-of-type(2) {
+      color: rgb(117, 27, 27);
+    }
+  }
+
+}
+
+@media (min-width: 576px) {
+
   footer {
     .logo_footer {
       display: flex;
@@ -6,18 +76,21 @@
       // max-width: auto;
       // max-height: 600px;
     }
+
     background-color: rgb(140, 140, 140);
 
     .footer_list {
       list-style-type: none;
       font-size: 1rem;
       font-family: Arial, Helvetica, sans-serif;
-   
+
     }
+
     li {
       padding: 5px;
       padding-bottom: 10px;
     }
+
     .social-media-footer {
       display: flex;
       justify-content: center;
@@ -27,101 +100,126 @@
         font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
         margin-inline-end: 2rem;
-        color: black;
+        color: rgb(0, 0, 0);
       }
     }
+
     a {
       padding: 1.5%;
     }
+
     .copyright-footer {
       display: flex;
       justify-content: center;
-   
+
       p {
         font-size: 0.5rem;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(184, 184, 184 );
-  
-      }      
+        color: rgb(184, 184, 184);
+
+      }
     }
-    .poweredby-footer{
+
+    .poweredby-footer {
       display: flex;
       justify-content: center;
-   
+
       p {
         font-size: 0.5rem;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(184, 184, 184 );
+        color: rgb(184, 184, 184);
         margin-bottom: 40px;
-        }
-        p:nth-of-type(2){
-          color: black;
-        }
+      }
+
+      p:nth-of-type(2) {
+        color: rgb(128, 216, 13); // Jag har ändrat färgen enbart för att de olika break points ska bli tydliga för mig. Jag ändrar sedan till black
+      }
     }
-  
   }
-  @media (min-width: 576px){
+}
+
+//Desktop
+@media (min-width: 1200px) {
 
   footer {
+    display: flex;
+    background-color: rgb(43, 83, 134); // Jag har ändrat färgen enbart för att de olika break points ska bli tydliga för mig. Jag ändrar sedan till black
+    height: 200px;
+
     .logo_footer {
       display: flex;
-      justify-content: center;
-      // max-width: auto;
-      // max-height: 600px;
-    }
-    background-color: rgb(140, 140, 140);
+      justify-content: end;
+      height: 70px;
+      max-width: 1031px;
+      margin-left: 2rem;
+      margin-right: 4rem;
+      margin-top: 3.8rem;
 
+    }
+ .footer-list-wraper{
+  display: flex;
+
+ }
     .footer_list {
-      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: stretch;
       font-size: 1rem;
       font-family: Arial, Helvetica, sans-serif;
-   
+
     }
+
     li {
       padding: 5px;
       padding-bottom: 10px;
     }
+
     .social-media-footer {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: row;
 
       p {
         font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
         margin-inline-end: 2rem;
-        color: black;
+        color: rgb(0, 0, 0);
       }
     }
+
     a {
       padding: 1.5%;
     }
+
     .copyright-footer {
+      flex-direction: row;
       display: flex;
       justify-content: center;
-   
+
       p {
         font-size: 0.5rem;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(184, 184, 184 );
-  
-      }      
+        color: rgb(184, 184, 184);
+
+      }
     }
-    .poweredby-footer{
+
+    .poweredby-footer {
       display: flex;
       justify-content: center;
-   
+
       p {
         font-size: 0.5rem;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(184, 184, 184 );
+        color: rgb(184, 184, 184);
         margin-bottom: 40px;
-        }
-        p:nth-of-type(2){
-          color: black;
-        }
+      }
+
+      p:nth-of-type(2) {
+        color: rgb(107, 79, 182);
+      }
     }
   }
-  }
-
-
+}
