@@ -1,4 +1,11 @@
-<<<<<<< HEAD
+.navbar {
+  display: flex;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media (max-width: 400px) {
   footer {
     background-color: rgb(140, 140, 140);
@@ -16,7 +23,7 @@
     padding: 5px;
     padding-bottom: 10px;
   }
-=======
+}
 body {
   margin: auto;
   width: 1080px;
@@ -25,13 +32,4 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.navbar {
-  display: flex;
-  gap: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
->>>>>>> bcb1d8dedd939ee3783533c71fbd1307badcf796
 }/*# sourceMappingURL=style.css.map */
