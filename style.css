@@ -1,9 +1,25 @@
 .navbar {
+  width: 1080px;
   display: flex;
   gap: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(184, 118, 121);
 }
 
 @media (max-width: 400px) {
@@ -61,7 +77,6 @@
   }
 }
 body {
-  background: rgb(140, 140, 140);
   margin: auto;
   width: 1080px;
   height: 100vh;

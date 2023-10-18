@@ -1,7 +1,21 @@
 .navbar{
+    width: 1080px;
     display: flex;
     gap: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.container{
+    // border: 2px solid red;
+    width: 500px;
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: $PinkColor;
 }
