@@ -6,14 +6,16 @@ footer {
     justify-content: center;
     // max-width: auto;
     // max-height: 600px;
-  }
+    
 
-  background-color: rgb(140, 140, 140);
+  }
+;
 
   .footer_list {
     list-style-type: none;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+
   }
 
   li {
@@ -21,8 +23,12 @@ footer {
     padding-bottom: 10px;
   }
 
+  .del{
+  background-color: rgb(140, 140, 140)
+  }
   .social-media-footer {
     @include social-media-footer-mixin;
+    
     
     h5 {
       font-size: 1rem;
@@ -41,12 +47,13 @@ footer {
     p {
       text-align: center;
       font-size: $footerFontSizeMobile;
-      font-family: $footerFontFamilyMobile;
+      font-family: $primaryfontFamily;
       color: rgb(184, 184, 184);
+      margin-right: 1rem;
 //Vi behöver se över span taggen . Color anges ej på span-taggen  
       p span {
         color: black;
-        font-family: $footerFontFamilyMobile;
+        font-family: $primaryfontFamily;
        
       }
     }
@@ -79,9 +86,7 @@ footer {
       width: 200px;
     }
 
-    background-color: rgb(140, 140, 140); // Jag har ändrat färgen enbart för att de olika break points ska bli tydliga för mig. Jag ändrar sedan till black
-    
-  
+      
     .logo_footer {
       // border: 2px solid red;
       display: flex;

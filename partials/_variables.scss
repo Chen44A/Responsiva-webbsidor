@@ -1,44 +1,19 @@
 
 //Vi kan ändra allt detta. Jag har bara satt upp förslag på variabler som kan vara bra att vi anväder
 
-//Font family,size  color for desktop 
-$headingFontFamilyDesk: Arial, Helvetica, sans-serif;;
-$headingFontSizeDesk: 1.25rem; // 20 px 
-$headingColorDesk: black;
 
-$bodyFontFamilyDesk: Arial, Helvetica, sans-serif;;
-$bodyFontSizeDesk: 1.125; // 18 px 
-$bodyColorDesk: black;
-
-$h3FontFamilyDesk: Arial, Helvetica, sans-serif;;
-$h3FontSizeDesk: 1rem;  // 16 px
-$h3ColorDesk:black;
-
-//Font family,size  color for mobile 
-$headingFontFamilyMobile: Arial, Helvetica, sans-serif;;
-$headingFontSizeMobile: 1rem; // 16 px 
-$headingColorMobile:black;
-
-
-$bodyFontFamilyMobile: Arial, Helvetica, sans-serif;;
-$bodyFontSizeMobile: 0.938rem; // 16 px 
-$bodyColorMobile:Black;
-
-$footerFontFamilyMobile:Arial, Helvetica, sans-serif;;
-$footerFontSizeMobile:0.5rem;
-$footerColorMobile:black;
-
-$h3FontFamilyMobile: Arial, Helvetica, sans-serif;;
-$h3FontSizeMobile: 0.938rem;
-$h3FontWeightMobile: bold;
-$h3ColorMobile:black;
-
+$primaryfontFamily: 'Poppins', sans-serif
 
 //Primary and theme/accent colour. Om du, Shishi,  hellre vill 
 //använda orden Primary och accent color så kan vi ändra 
 
-$color-background: rgb(255, 255, 255); // vit bakgrund
+$color-background: rgb(242, 242, 242); // vit bakgrund
 $color-primary: rgb(228, 215, 215); // Bakgrund för body?
 $color-footer: rgb(140, 140, 140) ;//Footer bakgrund 
 $color-button-pink:rgb(184, 118, 121) ; // Förslag till knappfärg vid ev hover
 $color-button-blue:rgb(83, 100, 162) ; // Förslag till knappfärg vid ev hover
+
+
+//Nedladd fontfamily 
+//font-family: 'Poppins', sans-serif;
+//font-family: 'Raleway', sans-serif;
