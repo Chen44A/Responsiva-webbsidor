@@ -1,65 +1,149 @@
-//Small mobile 
-@media (max-width: 400px) {
-  footer {
-    .logo_footer {
-      display: flex;
-      justify-content: center;
-      // max-width: auto;
-      // max-height: 600px;
-    }
-    background-color: rgb(140, 140, 140);
+// Mobile footer
+footer {
+  .logo_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // max-width: auto;
+    // max-height: 600px;
+    
 
-    .footer_list {
-      list-style-type: none;
+  }
+;
+
+  .footer_list {
+    list-style-type: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  li {
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  .del{
+  background-color: rgb(140, 140, 140)
+  }
+  .social-media-footer {
+    @include social-media-footer-mixin;
+    
+    
+    h5 {
       font-size: 1rem;
       font-family: Arial, Helvetica, sans-serif;
-   
-    }
-    li {
-      padding: 5px;
-      padding-bottom: 10px;
-    }
-    .social-media-footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      p {
-        font-size: 1rem;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-inline-end: 2rem;
-        color: black;
-      }
+      margin-inline-end: 2rem;
+      color: black;
     }
     a {
       padding: 1.5%;
     }
-    .copyright-footer {
-      display: flex;
-      justify-content: center;
-   
-      p {
-        font-size: 0.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(184, 184, 184 );
-  
-      }      
+  }
+
+
+  .copyright-footer {
+    
+    p {
+      text-align: center;
+      font-size: $footerFontSizeMobile;
+      font-family: $primaryfontFamily;
+      color: rgb(184, 184, 184);
+      margin-right: 1rem;
+//Vi behöver se över span taggen . Color anges ej på span-taggen  
+      p span {
+        color: black;
+        font-family: $primaryfontFamily;
+       
+      }
     }
     .poweredby-footer{
-      display: flex;
-      justify-content: center;
-   
-      p {
-        font-size: 0.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(184, 184, 184 );
-        margin-bottom: 40px;
-        }
-        p:nth-of-type(2){
-          color: black;
-        }
+      margin-bottom: 50px;
     }
-  
   }
+
 }
 
+
+//Desktop
+@media (min-width: 1080px) {
+  footer {
+    width: 1080px;
+
+    .wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .del{
+      // border: 2px solid red;
+      width: 800px;
+      padding: 0;
+    }
+
+    .logo_footer img{
+      width: 200px;
+    }
+
+      
+    .logo_footer {
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 3rem;
+    }
+
+    .footer-list-wraper{
+      display: flex;
+    }
+    
+    .footer_list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      align-items: center;
+      align-content: stretch;
+      font-size: 1.2rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .social-media-footer {
+      // border: 2px solid red;
+      width: 400px;
+      height: 50px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+      margin-left: 16px;
+     
+      h5 {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+      }
+    }
+
+    .two{
+      // border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .copyright-footer {
+      // border: 2px solid red;
+      text-align: end;
+      p span {
+       color: black;
+      }
+    }
+    .poweredby-footer{
+      margin-bottom: 0px;
+  }
+}
+}
