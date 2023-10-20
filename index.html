@@ -5,36 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiny Trends</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar"> 
-        <a href="index.html"><img src="image/logo.png" alt="home" width="200px"></a>
-        <div>
-            <div class="container">
-                <a href="about.html">Om oss</a>
-                <a href="produkter.html">Proudukter</a>
-                <a href="recesioner.html">Recensioner</a>
-                <a href="kontakta.html">Kontakta oss</a>
-                <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
-            </div>
-        </div>
+            <a href="index.html"><img src="image/logo.png" alt="home" width="150px" class="logo"></a>
+                <div class="container" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="produkter.html">Proudukter</a></li>
+                    <li><a href="recesioner.html">Recensioner</a></li>
+                    <li><a href="kontakta.html">Kontakta oss</a></li>
+                    <li><a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a></li>
+                    </ul>
+                </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
 
     <main>
+        <section class="CTA">
+            <div>
+            <h1>Följ Oss För Daily Baby Fashion Inspiration </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ducimus</p>
+            <a href="produkter.html"><button type="submit" name="Utforska mer">Utforska mer </button></a>
+            </div>
+        </section>
+
+        <section class="nyheter">
+            <h2>Nyheter</h2>
+            <div class="nyheter-wrapper">               
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="image/kläning.jpeg" alt="barnkläder" width="120px" class="kläder-bild"></a>
+                    <h3>Namn på kläder</h3>
+                    <p>material beskringvning</p>
+                    <div class="row">
+                        <p>299 kr</p>
+                        <a href="#"><img src="image/shopping-basket.png" alt="korg" width="20px"></a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="recensioner">
+            <h2>Recensioner</h2>
+
+        </section>
+
 
     </main>
-<footer>
-    <div class="logo_footer">
-        <img src="image/logo.png" alt="Picture of our logo">
-    </div>
-    <ul class="footer_list">
-        <li>Om oss</li>
-        <li>Produkter</li>
-        <li>Kontakta oss</li>
-        <li>Recensioner</li>
-    </ul>
-</footer>
+    <footer>
+       
+    </footer>
+     <!-- Javascript for toggle menu-->
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-500px";
+        }
+    </script>
 </body>
 </html>
