@@ -1,0 +1,148 @@
+.about-us-headtext {
+    background-color: $color-background;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    // align-content: stretch;
+
+    .h2about-us-text {
+        
+        margin: 10px 20px;
+        font-size: 2rem;
+    }
+
+    .h3about-us-text {
+        width: 70%;
+        font-size: 1rem;
+        margin: 10px 20px;
+        font-weight: 300;
+        
+        @media (min-width:1080px) {
+            width: 70%;
+        }
+    }
+
+    
+}
+
+.employee-wrapper{
+    display: center;
+    align-items: center;
+    text-align: center;
+
+@media (min-width:1080px){
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+    .employee1{
+        margin-left:20px;
+        margin-right: 20px;
+        margin-top:30px;
+        margin-bottom: 30px;
+    }
+    .about-first-name{
+        font-size: 1rem;
+    }
+  
+    .about-email{
+       
+        margin-bottom: 50px;
+    }
+   
+
+
+}
+}
+.about-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  
+
+}
+
+.about-us-medarbetare {
+    background-color: $color-background;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+
+    .h2medarbetar-rubrik {
+        margin: 0px 10px;
+        font-size: 1.5rem;
+        color: gray;
+
+    }
+    
+
+}
+.h3medarbetare-text {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        margin-top: 0px;
+       
+
+    }
+.about-profession{
+    margin-top: 0px;
+    font-size: 1rem;
+    
+}
+.about-prfession-text{
+    font-size: 0.9rem;
+    font-weight: 300;
+
+}
+.employeebutton{
+    @include buttonframe;
+    
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+
+.employee {
+    background-color: $color-background;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .employee1 img {
+        border-radius: 70px;
+    }
+    .about-first-name{
+        font-size: 2rem;
+      margin-top: 41px;
+      margin-left: 0px
+    }
+
+        .about-profession{
+            font-size:0.9;
+            color:gray
+        }
+    
+        .employeebutton:hover{
+            @include buttondesktophover;
+        }
+ 
+
+}     
+
+
+

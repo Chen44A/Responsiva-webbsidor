@@ -24,6 +24,11 @@ footer {
   .footer-logo{
     width: 250px;
     margin: auto;
+    
+    @media (min-width){
+      display: flex;
+     
+    }
   }
 
   .social-media-footer {
@@ -48,7 +53,6 @@ footer {
   }
 }
 
-
 //Desktop
 @media (min-width: 1080px) {
   footer{
@@ -67,7 +71,7 @@ footer {
       padding: 15px;
     }
     .del{
-      // border: 2px solid red;
+
       width: 800px;
       padding-right: 35px;
     }
@@ -75,7 +79,7 @@ footer {
       width: 200px;
     }
     .logo_footer {
-      // border: 2px solid red;
+
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -93,7 +97,7 @@ footer {
       font-size: 1.2rem;
     }
     .social-media-footer {
-      // border: 2px solid red;
+
       width: 400px;
       height: 50px;
       display: flex;
@@ -107,13 +111,13 @@ footer {
       }
     }
     .two{
-      // border: 2px solid red;
+ 
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     .copyright-footer {
-      // border: 2px solid red;
+
       text-align: end;
       p span {
        color: black;
@@ -122,5 +126,6 @@ footer {
     .poweredby-footer{
       margin-bottom: 0px;
   }
+
 }
 }
