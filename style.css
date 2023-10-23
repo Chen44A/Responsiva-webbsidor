@@ -552,6 +552,7 @@ h2 {
   display: center;
   align-items: center;
   text-align: center;
+  padding: 0 5%;
 }
 @media (min-width: 1080px) {
   .employee-wrapper {
