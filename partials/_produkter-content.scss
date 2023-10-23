@@ -1,0 +1,35 @@
+.produkter-CAT{
+    min-height: 70vh;
+    background-image:linear-gradient(rgba(171, 173, 174, 0.4),rgba(171, 171, 171, 0.4)),url(../image/produkt-background.jpg);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,255,255);
+}
+
+.produkter-nyheter{
+    min-height: 60vh;
+    height: 100px;
+    background-image:linear-gradient(rgba(171, 173, 174, 0.4),rgba(171, 171, 171, 0.4)),url(../image/produkter-nyheter.jpg);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    div{
+        h2{
+            margin: auto;
+            color: rgb(255,255,255);
+        }
+    }
+    button{
+        @include buttonphone;
+    }
+}

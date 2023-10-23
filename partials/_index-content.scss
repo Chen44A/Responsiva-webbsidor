@@ -1,10 +1,7 @@
-main{
-    background: $color-background;
-}
-// CTA
+// CTA-phone
 .CTA{
     min-height: 60vh;
-    background-image:linear-gradient(rgba(171, 173, 174, 0.7),rgba(171, 171, 171, 0.7)),url(../image/CTA.png);
+    background-image:linear-gradient(rgba(171, 173, 174, 0.6),rgba(171, 171, 171, 0.6)),url(../image/CTA.png);
     text-align: center;
     background-position: center;
     background-size: cover;
@@ -18,54 +15,188 @@ main{
         margin: auto;
     }
     button{
-        width: 8rem;
-        height: 2rem;
-        border: none;
-        background: $color-button-pink;
-        color: rgb(255,255,255);
-        margin-top: 1rem;
+        @include buttonphone;
     }
 }
   
 
 
-// Nyheter
+// Nyheter-phone
 h2{
-    margin: 3rem 0 2rem 2rem;
+    margin: 3rem 0 3rem 1.5rem;
     font-weight: 600;
 }
-    .nyheter{
-        // min-height: 150vh;
-        .kläder-bild{
-            // border: 1px solid lightgray;
-            background: rgb(255, 255, 255);
-            border-radius: 10px;
-            padding: 20px;
+
+.nyheter{
+    .kläder-bild{
+        // border: 1px solid lightgray;
+        border-radius: 10px;
+        width:160px;
+    }
+    .nyheter-wrapper{
+        padding: 0 5%;
+        min-width: 30vh;
+        @include container (row,space-between,center);
+        margin-bottom: 50px;
+    }
+    h3{
+        margin-bottom:0;
+        padding: 0;
+        font-size: 0.8rem;
+        max-width: 240px;
+
+    }
+    h3+p{
+        margin: 0.3rem 0 0 0;
+        font-size: 0.8rem;
+        max-width: 240px;
+    }
+    .row{
+        @include container(row,space-between,center);
+        max-width: 240px;
+    
+    }
+    .row p{
+        font-size: 1.2rem;
+        color: $color-button-pink;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+
+
+
+// Recensioner-phone
+.recensioner-container{
+    min-height: 40vh;
+    // margin: 40px 0;
+    @include container(column,space-between,center);
+    gap:3rem;
+    padding: 5%;
+    box-sizing: border-box;
+
+    .recensioner-wrapper{
+        // border: 2px solid black;
+        flex-basis: 30%;
+        border-radius: 20px;
+        background-color: $color-background;
+        padding: 3%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .recensioner-row{
+            flex-basis: 85%;
+            // border: 2px solid red;
+            @include container (column,center,center);
+            p{
+                text-align: center;
+                font-size: 0.9rem;
+            }
+            div{
+                padding: 25px 0 30px 0;
+            }
         }
-        .nyheter-wrapper{
-            min-width: 30vh;
-            @include container (row,center,center);
-            gap:1.5rem;
-            flex: 1;
+        .kunder{
+            width: 60px;
+            background-color: #d9d9d9;
+            // height: 2rem;
+            // width: 2rem;
+            border-radius: 70px;
         }
-      
-        h3{
-            margin-bottom:0;
-            font-size: 0.8rem;
-        }
-        h3+p{
-            margin: 0.3rem 0 0 0;
-            font-size: 0.8rem;
-        }
-        .row{
-            @include container(row,space-between,center);
-        }
-        .row p{
-            font-size: 1.2rem;
-            color: $color-button-pink;
+        .kunder+p{
+            font-weight: 500;
         }
     }
-    
+}
+
+// kunderservice-phone
+.kontakta{
+    background-image:linear-gradient(rgba(171, 173, 174, 0.7),rgba(171, 171, 171, 0.7)),url(../image/kontakta.jpg);
+    background-position: center;
+    background-size: cover;
+    @include container(row,flex-start,center);
+    padding: 40px;
+    margin: 70px 0;
+    div{
+        // border: 2px solid red;
+        width:300px;
+        text-align: center;
+        h2{
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        h3{
+            margin: 0;
+        }
+        button{
+            @include buttonphone;
+        }
+
+    }
+}
+
+
+// om oss-phone
+.about{
+    // padding:50px 0 100px 0;
+    .about-container{
+        @include container(column,space-between,center);
+        gap: 2rem;
+        h2{
+            margin: 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        h3{
+            font-size: 1.75rem;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        .about-wrapper{
+            background: $color-background;
+            width: 100%;
+            height: fit-content;
+            padding: 40px 0 100px 0; 
+            @include container(row,center,center);
+            gap: 5rem;
+            .personaler{
+                height: 300px;
+                padding: 20px 0;
+                // border: 2px solid red;
+                // border-radius: 20px;
+                // background-color: rgba(255,255,255,$alpha: 0.8);
+                width: 250px;
+                @include container(row,center,center);
+                img{
+                    border-radius: 60px;
+                    margin-bottom: 20px;
+                }
+                h4{
+                    padding: 0;
+                    margin:0 0 10px 0;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+                p{
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                button{
+                    width: 8rem;
+                    height: 2rem;
+                    border: 1px solid black;
+                    border-radius: 30px;
+                    color: black;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
     
 
 
@@ -74,9 +205,10 @@ h2{
     main{
         width: 70%;
         margin: auto;
-
-// CTA
+    }
+// CTA-desktop
     .CTA{
+        min-height: 70vh;
         h1{
             font-size: 2.2rem;
             text-align: center;
@@ -84,21 +216,102 @@ h2{
         }
         
         button{
-            border: 1px solid black;
-            background: transparent;
-            color: rgb(8, 8, 8);
+            @include buttondesktop
         }
 
         button:hover{
             border: 1px solid $color-button-pink;
             background: $color-button-pink;
             transition: 1s;
+            cursor:pointer;
         }
     }
 
-// Nyheter
+// Nyheter-desktop
+.nyheter{
+    .nyheter-wrapper{
+        padding: 0;
+    }
+    h2{
+        margin-left: 0;
+    }
     .kläder-bild{
-        width: 200px;
+        width:240px;
     }
+    }    
+    
+
+// Recensioner-desktop
+.recensioner-container {
+    flex-direction: row;
+    padding: 0;
+
+    .recensioner-wrapper{
+        // border: 2px solid black;
+    
+        .recensioner-row{
+            p{
+                font-size: 0.8rem;
+            }
+        }
     }
+    .recensioner-wrapper:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3) ;
+        background-color:#fbeded;
+        transition: 1s;
+        cursor:pointer;
+    }
+}
+
+// kunderservice-desktop
+.kontakta{
+    padding: 0 5%;
+    div{
+        width: 350px;
+        padding: 12% 3%;
+        box-sizing: border-box;
+        text-align: left;
+        background-color: rgba(255,255,255,$alpha: 0.5);
+        p{
+            font-size: 0.75rem;
+        }
+        button{
+            @include buttondesktop
+        }
+        button:hover{
+            border: 1px solid $color-button-pink;
+            background: $color-button-pink;
+            transition: 1s;
+            cursor:pointer;
+        }
+    }
+}
+// om oss-desktop
+.about{
+    margin: 30px 0 100px 0;
+.about-wrapper{
+    justify-content: space-between;
+    .personaler{
+        h4{
+            font-size: 0.5rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        button:hover{
+            background: rgba($color-button-pink,$alpha: 0.5);
+            transition: 1s;
+            border: none;
+            cursor:pointer;
+        }
+    }
+}
+}
+
+
+
+
+
+
+    
 }
