@@ -525,6 +525,17 @@ h2 {
   }
 }
 
+.about-img {
+  width: 60px;
+  height: 200px;
+}
+@media (min-width: 1080px) {
+  .about-img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 .employee-wrapper {
   display: center;
   align-items: center;
@@ -572,12 +583,12 @@ h2 {
 }
 .about-us-medarbetare .h2medarbetar-rubrik {
   margin: 0px 10px;
-  font-size: 1.5rem;
-  color: gray;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
 }
 
 .h3medarbetare-text {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   margin-bottom: 20px;
   margin-top: 0px;
 }
@@ -618,7 +629,7 @@ h2 {
   border-radius: 70px;
 }
 .employee .about-first-name {
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-top: 41px;
   margin-left: 0px;
 }
