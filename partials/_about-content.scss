@@ -23,6 +23,7 @@
         
         margin: 10px 20px;
         font-size: 2rem;
+        
     }
 
     .h3about-us-text {
@@ -36,8 +37,19 @@
         }
     }
 
-    
 }
+.about-img{
+ width: 60px;
+ height: 200px;
+
+ @media (min-width:1080px) {
+    width: 400px;
+    height: 400px;
+    
+ }
+}
+
+
 
 .employee-wrapper{
     display: center;
@@ -92,15 +104,15 @@
 
     .h2medarbetar-rubrik {
         margin: 0px 10px;
-        font-size: 1.5rem;
-        color: gray;
+        font-size: 1.2rem;
+        color: rgb(0, 0, 0);
 
     }
     
 
 }
 .h3medarbetare-text {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         margin-bottom: 20px;
         margin-top: 0px;
        
@@ -138,7 +150,7 @@
         border-radius: 70px;
     }
     .about-first-name{
-        font-size: 2rem;
+        font-size: 1.2rem;
       margin-top: 41px;
       margin-left: 0px
     }
