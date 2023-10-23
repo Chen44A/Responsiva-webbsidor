@@ -105,6 +105,11 @@ footer .footer-logo {
   width: 250px;
   margin: auto;
 }
+@media (min-width) {
+  footer .footer-logo {
+    display: flex;
+  }
+}
 footer .social-media-footer {
   display: flex;
   justify-content: center;
@@ -286,6 +291,139 @@ h2 {
     width: 200px;
   }
 }
+.about-us-headtext {
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-us-headtext .h2about-us-text {
+  margin: 10px 20px;
+  font-size: 2rem;
+}
+.about-us-headtext .h3about-us-text {
+  width: 70%;
+  font-size: 1rem;
+  margin: 10px 20px;
+  font-weight: 300;
+}
+@media (min-width: 1080px) {
+  .about-us-headtext .h3about-us-text {
+    width: 70%;
+  }
+}
+
+.employee-wrapper {
+  display: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  .employee-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .employee-wrapper .employee1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .employee-wrapper .about-first-name {
+    font-size: 1rem;
+  }
+  .employee-wrapper .about-email {
+    margin-bottom: 50px;
+  }
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.about-us-medarbetare {
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+.about-us-medarbetare .h2medarbetar-rubrik {
+  margin: 0px 10px;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.h3medarbetare-text {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.about-profession {
+  margin-top: 0px;
+  font-size: 1rem;
+}
+
+.about-prfession-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.employeebutton {
+  width: 8rem;
+  height: 2rem;
+  border: 1px solid black;
+  background: none;
+  color: rgb(0, 0, 0);
+  margin-top: 1rem;
+  border-radius: 15px;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+.employee {
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.employee .employee1 img {
+  border-radius: 70px;
+}
+.employee .about-first-name {
+  font-size: 2rem;
+  margin-top: 41px;
+  margin-left: 0px;
+}
+.employee .about-profession {
+  font-size: 0.9;
+  color: gray;
+}
+.employee .employeebutton:hover {
+  border: none;
+  background-color: rgb(184, 118, 121);
+  color: white;
+  transition: 1s;
+}
+
 .main-container {
   display: flex;
   flex-direction: column-reverse;
@@ -336,61 +474,89 @@ h2 {
 h3 {
   font-size: 2rem;
   padding-bottom: 20px;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 45px;
+  margin-bottom: 0px;
 }
 
 h4 {
   font-size: 1rem;
   margin-left: 15px;
   margin-right: 15px;
-  padding-bottom: 20px;
 }
 @media (min-width: 1080px) {
   h4 {
-    font-size: 25px;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 }
 
 form {
   justify-content: center;
-  margin: 40px;
+  margin: 60px;
   outline: none;
 }
 
 .input-box {
-  margin: 15px;
+  margin: 25px;
 }
 
 input[type=text],
 textarea {
+  width: 20rem;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   color: rgb(0, 0, 0);
   border-radius: 3px;
-  background-color: rgb(242, 252, 252);
+  background-color: rgb(255, 255, 255);
   outline: none;
   padding: 10px;
   outline-width: 1px;
-  resize: vertical;
+  resize: none;
 }
 @media (min-width: 1080px) {
   input[type=text],
   textarea {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(252, 252, 252);
+    font-size: 1rem;
+    border-radius: 3px;
+    text-align: center;
+    width: 20rem;
+  }
+}
+
+.submit [type=text],
+textarea {
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+}
+@media (min-width: 1080px) {
+  .submit [type=text],
+  textarea {
+    width: 30rem;
+    height: 10rem;
   }
 }
 
 .button input[type=button] {
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  background: rgb(83, 100, 162);
-  transition: all 0.3s ease;
+  border: 1px solid black;
+  background: transparent;
+  color: rgb(8, 8, 8);
+  width: 8rem;
+  height: 2rem;
+  border: 1px solid black;
+  background: none;
+  color: rgb(0, 0, 0);
+  margin-top: 1rem;
+  border-radius: 15px;
 }
+
 @media (min-width: 1080px) {
-  .button input[type=button] {
+  .button input[type=button]:hover {
+    border: none;
+    background-color: rgb(184, 118, 121);
+    color: white;
+    transition: 1s;
     cursor: pointer;
   }
 }
@@ -403,12 +569,17 @@ textarea {
 @media (min-width: 1080px) {
   .left-side {
     background-color: rgb(242, 242, 242);
+    margin: 50px 40px;
   }
   .left-side .topic {
     margin: 11%;
     font-size: 1.5rem;
     color: black;
   }
+}
+
+.text-one:last-child {
+  margin-bottom: 2rem;
 }
 
 body {
