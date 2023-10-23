@@ -10,7 +10,7 @@
     align-items: center;
 }
 .main-container {
-
+    background-color: $color-background;
     display: flex;
     flex-direction: column-reverse;
     box-sizing: border-box;
@@ -50,7 +50,6 @@
 }
 
 .right-side {
-    background-color: $color-background;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -164,7 +163,6 @@ textarea {
     justify-content: center;
    
     @media(min-width: 1080px) {
-        background-color: $color-background;
         margin: 50px 40px;
 
 
