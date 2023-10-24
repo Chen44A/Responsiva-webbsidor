@@ -22,12 +22,14 @@
 
 
 // Nyheter-phone
-h2{
-    margin: 3rem 0 3rem 1.5rem;
-    font-weight: 600;
-}
+
+
 
 .nyheter{
+    h2{
+        margin: 3rem 0 3rem 1.5rem;
+        font-weight: 600;
+    }
     .kläder-bild{
         // border: 1px solid lightgray;
         border-radius: 10px;
@@ -66,6 +68,12 @@ h2{
 
 
 // Recensioner-phone
+.recensioner{
+    h2{
+        margin: 3rem 0 3rem 1.5rem;
+        font-weight: 600;
+    }
+}
 .recensioner-container{
     min-height: 40vh;
     // margin: 40px 0;
