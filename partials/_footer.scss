@@ -25,9 +25,8 @@ footer {
     width: 250px;
     margin: auto;
     
-    @media (min-width){
+    @media (min-width:1080px){
       display: flex;
-     
     }
   }
 

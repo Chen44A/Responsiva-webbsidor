@@ -61,6 +61,7 @@ a {
     z-index: 2;
     position: static;
     background: none;
+    height: -moz-fit-content;
     height: fit-content;
     width: 600px;
     text-align: right;
@@ -104,7 +105,7 @@ footer .footer-logo {
   width: 250px;
   margin: auto;
 }
-@media (min-width) {
+@media (min-width: 1080px) {
   footer .footer-logo {
     display: flex;
   }
@@ -365,6 +366,7 @@ h2 {
 .about .about-container .about-wrapper {
   background: rgb(242, 242, 242);
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 40px 0 100px 0;
   display: flex;
@@ -547,7 +549,7 @@ h2 {
 }
 
 .employee-wrapper {
-  display: center;
+  display: flex;
   align-items: center;
   text-align: center;
   padding: 0 5%;
@@ -645,7 +647,7 @@ h2 {
   margin-left: 0px;
 }
 .employee .about-profession {
-  font-size: 0.9;
+  font-size: 0.9rem;
   color: gray;
 }
 .employee .employeebutton:hover {
