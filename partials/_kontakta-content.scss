@@ -116,10 +116,14 @@
     .input-box {
         margin: 25px;
     }
+    strong{
+        font-weight: 400;
+        color: rgb(193, 4, 4);
+    }
 
     input[type=text],
     textarea {
-        width: 20rem;
+        width: 18rem;
         color: rgb(0, 0, 0);
         border-radius: 3px;
         border: 1px solid black;
@@ -135,7 +139,7 @@
             // resize: vertical ;
             border-radius: 3px;
             // resize: vertical;
-            width: 25rem
+            width: 23rem
         }
 
         .submit [type=text],

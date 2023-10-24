@@ -338,6 +338,7 @@ footer .copyright-footer p {
 }
 .kontakta div h3 {
   margin: 0;
+  font-size: 1.75rem;
 }
 .kontakta div button {
   width: 8rem;
@@ -827,9 +828,13 @@ footer .copyright-footer p {
 .right-side .input-box {
   margin: 25px;
 }
+.right-side strong {
+  font-weight: 400;
+  color: rgb(193, 4, 4);
+}
 .right-side input[type=text],
 .right-side textarea {
-  width: 20rem;
+  width: 18rem;
   color: rgb(0, 0, 0);
   border-radius: 3px;
   border: 1px solid black;
@@ -844,7 +849,7 @@ footer .copyright-footer p {
   .right-side textarea {
     background-color: rgb(252, 252, 252);
     border-radius: 3px;
-    width: 25rem;
+    width: 23rem;
   }
 }
 .right-side input[type=text] .submit [type=text],

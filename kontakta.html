@@ -66,16 +66,20 @@
         <p>Om du har några frågor kan du kontakta oss här nedan;</p>
         <form action="#">
           <div class="input-box">
-            <input type="text" placeholder="Ditt namn">
+            <input type="text" placeholder="Ditt namn" required>
+            <strong class="required" title="obligatorisk uppgift">*</strong>
           </div>
           <div class="input-box">
-            <input type="text" placeholder="Din e-postadress">
+            <input type="text" placeholder="Din e-postadress" required>
+            <strong class="required" title="obligatorisk uppgift">*</strong>
           </div>
           <div class="input-box">
-            <input type="text" placeholder="Ämne">
+            <input type="text" placeholder="Ämne" required>
+            <strong class="required" title="obligatorisk uppgift">*</strong>
           </div>
           <div class="input-box submit">
-            <textarea placeholder="Meddelande"></textarea>
+            <textarea placeholder="Meddelande" required></textarea>
+            <strong class="required" title="obligatorisk uppgift">*</strong>
           </div>
           <div class="button">
             <input type="button" value="Skicka">
