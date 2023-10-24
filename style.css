@@ -61,7 +61,6 @@ a {
     z-index: 2;
     position: static;
     background: none;
-    height: -moz-fit-content;
     height: fit-content;
     width: 600px;
     text-align: right;
@@ -366,7 +365,6 @@ h2 {
 .about .about-container .about-wrapper {
   background: rgb(242, 242, 242);
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 40px 0 100px 0;
   display: flex;
