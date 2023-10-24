@@ -33,3 +33,15 @@
         @include buttonphone;
     }
 }
+
+@media (min-width:1080px){
+    .produkter-nyheter{
+        button:hover{
+            background: none;
+            border: 1px solid white;
+            transition: 1s;
+            cursor:pointer;
+
+        }
+    }
+}

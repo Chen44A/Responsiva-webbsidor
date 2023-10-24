@@ -699,6 +699,14 @@ footer .copyright-footer p {
   margin-top: 1rem;
 }
 
+@media (min-width: 1080px) {
+  .produkter-nyheter button:hover {
+    background: none;
+    border: 1px solid white;
+    transition: 1s;
+    cursor: pointer;
+  }
+}
 .recensioner-CTA {
   min-height: 70vh;
   background-image: linear-gradient(rgba(171, 173, 174, 0.4), rgba(171, 171, 171, 0.4)), url(../image/referenser-background.jpeg);
