@@ -784,43 +784,38 @@ h2 {
   align-items: center;
   align-content: stretch;
 }
-
-.topic-text {
+.right-side .topic-text {
   color: rgb(1, 1, 1);
   padding-bottom: 5px;
 }
-
-h3 {
+.right-side h3 {
   font-size: 2rem;
   padding-bottom: 20px;
   margin-top: 45px;
   margin-bottom: 0px;
 }
-
-h4 {
+.right-side h4 {
   font-size: 1rem;
   margin-left: 15px;
   margin-right: 15px;
 }
 @media (min-width: 1080px) {
-  h4 {
+  .right-side h4 {
     font-size: 20px;
     margin-bottom: 40px;
   }
 }
 
-form {
+.right-side form {
   justify-content: center;
   margin: 60px;
   outline: none;
 }
-
-.input-box {
+.right-side .input-box {
   margin: 25px;
 }
-
-input[type=text],
-textarea {
+.right-side input[type=text],
+.right-side textarea {
   width: 20rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -833,8 +828,8 @@ textarea {
   resize: none;
 }
 @media (min-width: 1080px) {
-  input[type=text],
-  textarea {
+  .right-side input[type=text],
+  .right-side textarea {
     background-color: rgb(252, 252, 252);
     font-size: 1rem;
     border-radius: 3px;
@@ -842,22 +837,24 @@ textarea {
     width: 20rem;
   }
 }
-
-.submit [type=text],
-textarea {
+.right-side input[type=text] .submit [type=text],
+.right-side input[type=text] textarea,
+.right-side textarea .submit [type=text],
+.right-side textarea textarea {
   text-align: center;
   width: 20rem;
   height: 20rem;
 }
 @media (min-width: 1080px) {
-  .submit [type=text],
-  textarea {
+  .right-side input[type=text] .submit [type=text],
+  .right-side input[type=text] textarea,
+  .right-side textarea .submit [type=text],
+  .right-side textarea textarea {
     width: 30rem;
     height: 10rem;
   }
 }
-
-.button input[type=button] {
+.right-side .button input[type=button] {
   border: 1px solid black;
   background: transparent;
   color: rgb(8, 8, 8);
@@ -869,9 +866,8 @@ textarea {
   margin-top: 1rem;
   border-radius: 15px;
 }
-
 @media (min-width: 1080px) {
-  .button input[type=button]:hover {
+  .right-side .button input[type=button]:hover {
     border: none;
     background-color: rgb(184, 118, 121);
     color: white;
