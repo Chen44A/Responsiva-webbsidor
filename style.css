@@ -411,9 +411,10 @@ footer .copyright-footer p {
   width: 8rem;
   height: 2rem;
   border: 1px solid black;
-  border-radius: 30px;
-  color: black;
+  background: none;
+  color: rgb(0, 0, 0);
   margin-top: 1rem;
+  border-radius: 15px;
 }
 
 @media (min-width: 1080px) {
@@ -435,8 +436,9 @@ footer .copyright-footer p {
     color: rgb(8, 8, 8);
   }
   .CTA button:hover {
-    border: 1px solid rgb(184, 118, 121);
-    background: rgb(184, 118, 121);
+    border: none;
+    background-color: rgb(184, 118, 121);
+    color: white;
     transition: 1s;
     cursor: pointer;
   }
@@ -481,8 +483,9 @@ footer .copyright-footer p {
     color: rgb(8, 8, 8);
   }
   .kontakta div button:hover {
-    border: 1px solid rgb(184, 118, 121);
-    background: rgb(184, 118, 121);
+    border: none;
+    background-color: rgb(184, 118, 121);
+    color: white;
     transition: 1s;
     cursor: pointer;
   }
@@ -499,9 +502,10 @@ footer .copyright-footer p {
     font-size: 0.8rem;
   }
   .about .about-wrapper .personaler button:hover {
-    background: rgba(184, 118, 121, 0.5);
-    transition: 1s;
     border: none;
+    background-color: rgb(184, 118, 121);
+    color: white;
+    transition: 1s;
     cursor: pointer;
   }
 }
@@ -658,6 +662,7 @@ footer .copyright-footer p {
   background-color: rgb(184, 118, 121);
   color: white;
   transition: 1s;
+  cursor: pointer;
 }
 
 .produkter-CAT {
@@ -737,7 +742,9 @@ footer .copyright-footer p {
     margin-left: 45%;
   }
   .recensioner-button:hover {
-    background-color: rgba(184, 118, 121, 0.5);
+    border: none;
+    background-color: rgb(184, 118, 121);
+    color: white;
     transition: 1s;
     cursor: pointer;
   }

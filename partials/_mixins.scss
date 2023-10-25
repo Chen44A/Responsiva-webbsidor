@@ -35,11 +35,12 @@
     border: 1px solid black;
     background: transparent;
     color: rgb(8, 8, 8);
-    
 }
 @mixin buttondesktophover{
     border: none;
     background-color: $color-button-pink;
     color: white;
     transition: 1s;
+    cursor:pointer;
 }
+
