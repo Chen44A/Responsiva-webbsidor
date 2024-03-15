@@ -201,7 +201,7 @@ footer .copyright-footer p {
 }
 .CTA {
   min-height: 60vh;
-  background-image: linear-gradient(rgba(171, 173, 174, 0.6), rgba(171, 171, 171, 0.6)), url(../image/CTA.png);
+  background-image: linear-gradient(rgba(171, 173, 174, 0.6), rgba(171, 171, 171, 0.6)), url(image/CTA.png);
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -317,7 +317,7 @@ footer .copyright-footer p {
 }
 
 .kontakta {
-  background-image: linear-gradient(rgba(171, 173, 174, 0.7), rgba(171, 171, 171, 0.7)), url(../image/kontakta.jpg);
+  background-image: linear-gradient(rgba(171, 173, 174, 0.7), rgba(171, 171, 171, 0.7)), url(image/kontakta.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -511,7 +511,7 @@ footer .copyright-footer p {
 }
 .about-CTA {
   min-height: 60vh;
-  background-image: linear-gradient(rgba(171, 173, 174, 0.6), rgba(171, 171, 171, 0.6)), url(../image/about-background.jpg);
+  background-image: linear-gradient(rgba(171, 173, 174, 0.6), rgba(171, 171, 171, 0.6)), url(image/about-background.jpg);
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -667,7 +667,7 @@ footer .copyright-footer p {
 
 .produkter-CAT {
   min-height: 70vh;
-  background-image: linear-gradient(rgba(171, 173, 174, 0.4), rgba(171, 171, 171, 0.4)), url(../image/produkt-background.jpg);
+  background-image: linear-gradient(rgba(171, 173, 174, 0.4), rgba(171, 171, 171, 0.4)), url(image/produkt-background.jpg);
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -681,7 +681,7 @@ footer .copyright-footer p {
 .produkter-nyheter {
   min-height: 60vh;
   height: 100px;
-  background-image: linear-gradient(rgba(171, 173, 174, 0.4), rgba(171, 171, 171, 0.4)), url(../image/produkter-nyheter.jpg);
+  background-image: linear-gradient(rgba(171, 173, 174, 0.4), rgba(171, 171, 171, 0.4)), url(image/produkter-nyheter.jpg);
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -714,7 +714,7 @@ footer .copyright-footer p {
 }
 .recensioner-CTA {
   min-height: 70vh;
-  background-image: linear-gradient(rgba(171, 173, 174, 0.4), rgba(171, 171, 171, 0.4)), url(../image/referenser-background.jpeg);
+  background-image: linear-gradient(rgba(171, 173, 174, 0.4), rgba(171, 171, 171, 0.4)), url(image/referenser-background.jpeg);
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -751,7 +751,7 @@ footer .copyright-footer p {
 }
 .kontakt-CTA {
   min-height: 60vh;
-  background-image: linear-gradient(rgba(171, 173, 174, 0.6), rgba(171, 171, 171, 0.6)), url(../image/kontakta-background.jpg);
+  background-image: linear-gradient(rgba(171, 173, 174, 0.6), rgba(171, 171, 171, 0.6)), url(image/kontakta-background.jpg);
   text-align: center;
   background-position: center;
   background-size: cover;
